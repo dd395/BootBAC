@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blood Alcohol Content (BAC) Calculator</title>
+    <style>
+        .output{
+            display:none;
+        }
+    </style>
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 class="display-4">Blood Alcohol Content (BAC) Calculator</h1>
+<hr>
+<form>
+
+    <label for="myBeers">Number of Beers Consumed</label>
+    <input type="number" id="myBeers" required="required"><br><br>
+
+
+    <label for="myWine">Glasses of Wine Consumed</label>
+    <input type="number" id="myWine" required="required"><br><br>
+
+
+    <label for="myShots">Number of Shots Consumed</label>
+    <input type="number" id="myShots" required="required"><br><br>
+
+
+    <label for="myWeight">Your Weight in Pounds</label>
+    <input type="number" id="myWeight" required="required"><br><br>
+
+
+    <label for="myHours">Hours Since Your First Drink</label>
+    <input type="number" id="myHours" required="required"><br><br>
+</form>
+
+<button id="calcButton" class="btn btn-outline-primary btn-lg">Calculate My BAC</button><br>
+<br>
+
+
+
+
+<p class="output">Your Blood Alcohol Content (BAC) is <span id="alcOutput"></span>%.</p>
+
+<!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
